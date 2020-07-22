@@ -24,3 +24,6 @@ Episode 100	Average Score: 28.85
 Environment solved in 104 episodes! Average Score: 30.289049322986976
 ```
 ![](/graph.png)
+The results show that the environment has been successfully solved as the average score over 100 consecutive episodes for all 20 agents reached +30.
+## Ideas for Future Work
+Altough the agents managed to learn very effectively, I think there is definitely room for improvement. For instance, the hyperparameters used in __ddpg_agent.py__ are the same as in Udacity's pendulum notebook and could be altered for better performance. In addition, the [paper](https://arxiv.org/pdf/1509.02971.pdf) mentions the Ornstein-Uhlenbeck noise was added to the network policy whereas this implementation only adds it to the action space. Furthermore, I began this project with a single agent implementation in mind, however, I was unable to make the DDPG agent to train, therefore I could try implementing other actor-critic methods such as A3C, A2C, or D4PG which might work better.
